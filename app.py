@@ -7,7 +7,7 @@ import numpy as np
 # https://send.firefox.com/download/7c06286052eef380/#q8Sn_ka6TWOP8tN3MsdXOg
 
 DATA_URL = (
- "/home/rhyme/Desktop/motorvechile-mlds/mvcrashes.csv"
+ "/Users/apple/project/githubsunil/motorvehicle-mlds/mvcrashes.csv"
 )
 st.title("Motor vehicle collision in new york city")
 st.markdown("This application is a streamlit application to analyse motor vehicle collision in nyc")
@@ -22,6 +22,12 @@ def load_data(nrows):
     return data
 
 data = load_data(100000)
+
+st.header("Where are the most people injured in NYC?")
+injured_people = st.slider("Number of persons injured in vechile collisions", 0, 19)
+st.map(data.query("injured_persons >= @injured_people")[["latitude", "longitude"]].dropna(how="any"))
+
+
 
 if st.checkbox("Show raw data", False):
     st.subheader('Row data')
