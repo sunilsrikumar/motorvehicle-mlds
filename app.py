@@ -11,7 +11,9 @@ DATA_URL = (
  "/Users/apple/project/githubsunil/motorvehicle-mlds/mvcrashes.csv"
 )
 st.title("Motor vehicle collision in new york city")
-st.markdown("This application is a streamlit application to analyse motor vehicle collision in nyc")
+st.markdown("This application is a streamlit application to analyse motor vehicle collision in NYC.")
+st.markdown("Author: Sunil Kumar | Organization: NESCODE")
+
 
 @st.cache(persist=True)
 def load_data(nrows):
