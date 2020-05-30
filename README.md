@@ -11,7 +11,7 @@ python3 -m venv venv
 source venv/bin/activate
 git clone https://github.com/sunilsrikumar/motorvehicle-mlds.git
 cd motorvehicle-mlds
-download this csv file in same folder 
+download this csv file in same folder https://www.dropbox.com/s/xx2kqndfx02oo7v/mvcrashes.csv?dl=0
 Update the path of csv file as line number 12 in app.py
 pip install -r requirements.txt
 streamlit run app.py

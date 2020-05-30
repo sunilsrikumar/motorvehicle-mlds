@@ -6,7 +6,6 @@ import plotly.express as px
 
 # st.title("Hello world!")
 # st.markdown("## My first streamlit dashboard!")
-# https://send.firefox.com/download/7c06286052eef380/#q8Sn_ka6TWOP8tN3MsdXOg
 
 DATA_URL = (
  "/Users/apple/project/githubsunil/motorvehicle-mlds/mvcrashes.csv"
